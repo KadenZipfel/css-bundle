@@ -1,0 +1,21 @@
+{
+  "name": "css-pack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev-server": "nodemon app.js",
+    "sass:compile": "node-sass --include-path sass public/sass/main.sass public/css/styles.css",
+    "sass-watch": "nodemon -e sass -x \"npm run sass:compile\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KadenZipfel/sass-pack.git"
+  },
+  "author": "Kaden Zipfel",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
