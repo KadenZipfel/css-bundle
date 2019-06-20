@@ -1,5 +1,5 @@
 .btn {
-  background: inherit;
+  background: white;
   color: #282828;
   cursor: pointer;
   border: 1px solid #282828; }
@@ -45,6 +45,17 @@
 
 .btn-outline {
   border: 2px solid #282828; }
+
+.btn-ani-opp {
+  transition: 0.2s background-color, 0.2s color; }
+
+.btn-ani-opp:hover {
+  background-color: #282828;
+  color: white; }
+
+.btn-ani-opp:hover.btn-solid {
+  background-color: white;
+  color: #282828; }
 
 .btn-ani-raise {
   transition: 0.2s transform, 0.2s box-shadow; }

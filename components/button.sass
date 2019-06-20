@@ -1,11 +1,14 @@
 @import ../config/colors
 @import ../config/spacing
+
+$button-background-color: $color-neutral-button-background--light
+$button-font-color: $color-neutral-button-font--dark
   
 .btn
-  background: inherit
-  color: $color-neutral-button--dark
+  background: $button-background-color
+  color: $button-font-color
   cursor: pointer
-  border: 1px solid $color-neutral-button--dark
+  border: 1px solid $button-font-color
 
 // Size
 
@@ -49,16 +52,26 @@
 // Solid/Outline
 
 .btn-solid
-  background-color: $color-neutral-button--dark
-  color: $color-neutral-button--light
+  $button-background-color: $color-neutral-button-background--dark
+  $button-font-color: $color-neutral-button-font--light
+  background-color: $button-background-color
+  color: $button-font-color
 
 .btn-outline
-  border: 2px solid $color-neutral-button--dark
+  border: 2px solid $color-neutral-button-font--dark
 
 // Animations
 
 .btn-ani-opp
-  // Will require color variables
+  transition: 0.2s background-color, 0.2s color
+
+.btn-ani-opp:hover
+  background-color: $button-font-color
+  color: $button-background-color
+
+.btn-ani-opp:hover.btn-solid
+  background-color: $button-background-color
+  color: $button-font-color
 
 .btn-ani-raise
   transition: 0.2s transform, 0.2s box-shadow
