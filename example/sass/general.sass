@@ -8,7 +8,7 @@
   align-items: center
   justify-content: flex-start
 
-.header
+.content__header
   display: flex
   flex-direction: column
   align-items: center
@@ -17,11 +17,11 @@
   margin-bottom: 16px
   color: $color-neutral-0
 
-.header__title
+.content__title
   font-weight: 700
   font-size: 32px
 
-.header__info
+.content__info
   font-family: 'Roboto', Arial, Helvetica, sans-serif
   font-weight: 300
   font-size: 18px
@@ -57,3 +57,22 @@
 .container__header
   font-weight: 300
   text-align: center
+
+// Headers
+
+.headers
+  display: flex
+  align-items: center
+  justify-content: space-evenly
+  width: 80vw
+
+.headers__left,
+.headers__right
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+  h4
+    text-align: center
+    margin: $spacing-1
