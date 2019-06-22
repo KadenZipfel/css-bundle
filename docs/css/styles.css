@@ -164,10 +164,16 @@ body {
   font-weight: 700;
   font-size: 32px; }
 
+.content__title--main {
+  font-size: 48px; }
+
 .content__info {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 18px; }
+
+.content__info--main {
+  font-size: 24px; }
 
 .section {
   margin: 16px auto; }
