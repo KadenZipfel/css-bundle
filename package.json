@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "dev-server": "nodemon app.js",
-    "sass:compile": "node-sass --include-path sass example/sass/main.sass example/css/styles.css",
+    "sass:compile": "node-sass --include-path sass docs/sass/main.sass docs/css/styles.css",
     "sass-watch": "nodemon -e sass -x \"npm run sass:compile\""
   },
   "repository": {
