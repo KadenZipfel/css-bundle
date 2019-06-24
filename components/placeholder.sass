@@ -1,0 +1,90 @@
+@import ../config/spacing
+@import ../config/colors
+
+$ph-line-height: $spacing-3
+$ph-line-margin-bottom: $spacing-2
+$ph-paragraph-image-width: $ph-line-height * 3 + $ph-line-margin-bottom * 2
+$ph-paragraph-image-margin-right: $spacing-3
+  
+.placeholder
+  width: $spacing-14
+  max-width: 90vw
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: flex-start
+
+.ph-line
+  background-color: $color-neutral-6
+  height: $ph-line-height
+  margin-bottom: $ph-line-margin-bottom
+
+// We'll have to find a better way to make this work.
+// A for loop won't work because it applies the same width for each element.
+// For now this will have to do.
+.ph-line:nth-of-type(1)
+  width: random(30) + 70%
+.ph-line:nth-of-type(2)
+  width: random(30) + 70%
+.ph-line:nth-of-type(3)
+  width: random(30) + 70%
+.ph-line:nth-of-type(4)
+  width: random(30) + 70%
+.ph-line:nth-of-type(5)
+  width: random(30) + 70%
+.ph-line:nth-of-type(6)
+  width: random(30) + 70%
+.ph-line:nth-of-type(7)
+  width: random(30) + 70%
+.ph-line:nth-of-type(8)
+  width: random(30) + 70%
+.ph-line:nth-of-type(9)
+  width: random(30) + 70%
+.ph-line:nth-of-type(10)
+  width: random(30) + 70%
+
+.ph-header
+  margin-bottom: $spacing-1
+  width: 100%
+
+  .ph-line
+    height: $spacing-4
+
+.ph-paragraph
+  margin-bottom: $spacing-0
+  width: 100%
+
+  .ph-line
+    height: $spacing-3
+
+.ph-image
+  background-color: $color-neutral-6
+  height: 100%
+  width: 100%
+
+.ph-image-paragraph
+  margin-bottom: $spacing-0
+  width: 100%
+  position: relative
+
+  .ph-image
+    height: $ph-paragraph-image-width
+    width: $ph-paragraph-image-width
+    margin-right: $spacing-3
+
+  .ph-line
+    height: $spacing-3
+
+  .ph-line:nth-of-type(1),
+  .ph-line:nth-of-type(2),
+  .ph-line:nth-of-type(3)
+    margin-left: $ph-paragraph-image-width + $ph-paragraph-image-margin-right
+
+  .ph-lines
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
