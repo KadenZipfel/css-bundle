@@ -5,10 +5,10 @@ A package for custom modular css components.
 - Buttons
 - Container
 - Headers
+- Placeholders
 - Inputs (coming soon)
 - Labels (coming soon)
 - Alerts (coming soon)
-- Placeholders (coming soon)
 - Loaders (coming soon)
 - Shadows (coming soon)
 - and many more to come...
