@@ -1,4 +1,5 @@
 @import ../../config/colors
+@import ../../config/spacing
   
 // General
   
@@ -7,14 +8,15 @@
   flex-direction: column
   align-items: center
   justify-content: flex-start
+  margin: $spacing-3 auto
 
 .content__header
   display: flex
   flex-direction: column
   align-items: center
   justify-content: flex-start
-  margin-top: 32px
-  margin-bottom: 16px
+  margin-top: $spacing-5
+  margin-bottom: $spacing-3
   color: $color-neutral-0
 
 .content__title
@@ -33,7 +35,7 @@
   font-size: $font-size-5
 
 .section
-  margin: 16px auto
+  margin: $spacing-3 auto
 
 .subheader
   font-weight: $font-weight-semibold
@@ -88,3 +90,18 @@
 .image-container
   height: 300px
   width: 300px
+
+// Shadows
+
+.shadow-boxes
+  display: flex
+  align-items: center
+  justify-content: space-evenly
+
+.shadow-box
+  height: 200px
+  width: 200px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: $spacing-3
