@@ -2,6 +2,7 @@
 A package for custom modular css components.
 
 ### Components:
+- Alerts
 - Buttons
 - Container
 - Headers
@@ -9,7 +10,6 @@ A package for custom modular css components.
 - Shadows
 - Inputs (coming soon)
 - Labels (coming soon)
-- Alerts (coming soon)
 - Loaders (coming soon)
 - and many more to come...
 
