@@ -1,15 +1,19 @@
 @import ../../config/colors
 @import ../../config/spacing
 @import ../../config/typography
+@import ../../config/breakpoints
   
 // General
+
+html
+  scroll-behavior: smooth
   
 .content
   display: flex
   flex-direction: column
   align-items: center
   justify-content: flex-start
-  margin: $spacing-3 auto
+  padding: $spacing-6 0
 
 .content__header
   display: flex
@@ -50,7 +54,7 @@
 .nav
   height: 70px
   width: 100vw
-  padding: 0 $spacing-11
+  padding: 0 $spacing-8
   display: flex
   align-items: center
   justify-content: space-between
@@ -79,6 +83,7 @@
 .nav__menu
   height: 100%
   width: 49px
+  z-index: 1
 
 .nav__bar
   height: 3px
@@ -109,6 +114,73 @@
     transform: rotate(45deg)
   .nav__bar--3
     transform: translate(8px, -1px) rotate(-45deg)
+
+.nav__close-area
+  position: fixed
+  top: 0
+  bottom: 0
+  height: 100vh
+  width: 100vw
+  left: auto
+  right: 0
+  pointer-events: none
+  z-index: -1
+
+.nav__drawer
+  position: fixed
+  top: 0
+  right: 0
+  height: 100vh
+  width: 600px
+  max-width: 90vw
+  background: linear-gradient(to right, $color-green-4, $color-green-3)
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25)
+  padding: $spacing-7
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  transform-origin: right
+  transform: scaleX(0)
+  transition: 0.3s transform
+  +media($breakpoint-sm)
+    padding: $spacing-6
+
+.nav__drawer--active
+  transform: scaleX(1)
+
+  .nav__close-area
+    pointer-events: all
+  .nav__links
+    opacity: 1
+  .nav__socials
+    opacity: 1
+
+.nav__links
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: flex-start
+  opacity: 0
+  transition: 0.3s opacity
+  list-style: none
+
+.nav__header 
+  color: white
+  font-size: $font-size-6
+  font-family: Open Sans
+  font-weight: $font-weight-semibold
+  margin: $spacing-4 0
+
+.nav__link
+  text-decoration: none
+  color: white
+  font-size: $font-size-5
+  font-family: Roboto
+  font-weight: $font-weight-light
+  margin-bottom: $spacing-1 
 
 // Hero
 

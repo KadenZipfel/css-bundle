@@ -18,6 +18,32 @@
       <div class="nav__bar nav__bar--2"></div>
       <div class="nav__bar nav__bar--3"></div>
     </div>
+    <div class="nav__drawer">
+      <div class="nav__close-area"></div>
+      <ul class="nav__links">
+        <li class="nav__header">
+          Components
+        </li>
+        <a href="#alerts" class="nav__link">
+          <li class="nav__link">Alerts</li>
+        </a>
+        <a href="#buttons" class="nav__link">
+          <li class="nav__link">Buttons</li>
+        </a>
+        <a href="#container" class="nav__link">
+          <li class="nav__link">Container</li>
+        </a>
+        <a href="#headers" class="nav__link">
+          <li class="nav__link">Headers</li>
+        </a>
+        <a href="#placeholders" class="nav__link">
+          <li class="nav__link">Placeholders</li>
+        </a>
+        <a href="#shadows" class="nav__link">
+          <li class="nav__link">Shadows</li>
+        </a>
+      </ul>
+    </div>
   </nav>
   <div class="nav__background"></div>
 
@@ -33,7 +59,23 @@
     </button>
   </section>
 
-  <div class="content">
+  <div class="content" id="alerts">
+    <div class="content__header">
+      <h2 class="content__title">Alerts</h2>
+      <p class="content__info">Share important issues with your users.</p>
+    </div>
+
+    <div class="section">
+      <div class="alert alert-light">Here's an example of our light alert.</div>
+      <div class="alert alert-dark">Here's an example of our dark alert.</div>
+      <div class="alert alert-blue">Here's an example of our blue alert.</div>
+      <div class="alert alert-green">Here's an example of our green alert.</div>
+      <div class="alert alert-orange">Here's an example of our orange alert.</div>
+      <div class="alert alert-red">Here's an example of our red alert.</div>
+    </div>
+  </div>
+
+  <div class="content" id="buttons">
     <div class="content__header">
       <h2 class="content__title">Buttons</h2>
       <p class="content__info">Buttons have several combinable variables to use for complete customization.</p>    
@@ -82,7 +124,7 @@
     </div>
   </div>
 
-  <div class="content">
+  <div class="content" id="container">
     <div class="content__header">
       <h2 class="content__title">Container</h2>
       <p class="content__info">A simple class to wrap components in to keep 
@@ -101,7 +143,7 @@
     </div>
   </div>
 
-  <div class="content">
+  <div class="content" id="headers">
     <div class="content__header">
       <h2 class="content__title">Headers</h2>
       <p class="content__info">
@@ -126,7 +168,7 @@
     </div>
   </div>
 
-  <div class="content">
+  <div class="content" id="placeholders">
     <div class="content__header">
       <h2 class="content__title">Placeholders</h2>
       <p class="content__info">
@@ -184,7 +226,7 @@
     </div>
   </div>
 
-  <div class="content">
+  <div class="content" id="shadows">
     <div class="content__header">
       <h2 class="content__title">Shadows</h2>
       <p class="content__info">
@@ -226,20 +268,27 @@
     </div>
   </div>
 
-  <div class="content">
-    <div class="content__header">
-      <h2 class="content__title">Alerts</h2>
-      <p class="content__info">Share important issues with your users.</p>
-    </div>
+  <script>
+    // TODO: Move all inline JS to a proper directory
+    const navMenu = document.querySelector('.nav__menu');
+    const navDrawer = document.querySelector('.nav__drawer');
+    const navClose = document.querySelector('.nav__close-area');
+    const navLink = document.querySelector('.nav__link');
 
-    <div class="section">
-      <div class="alert alert-light">Here's an example of our light alert.</div>
-      <div class="alert alert-dark">Here's an example of our dark alert.</div>
-      <div class="alert alert-blue">Here's an example of our blue alert.</div>
-      <div class="alert alert-green">Here's an example of our green alert.</div>
-      <div class="alert alert-orange">Here's an example of our orange alert.</div>
-      <div class="alert alert-red">Here's an example of our red alert.</div>
-    </div>
-  </div>
+    navMenu.addEventListener('click', () => {
+      navDrawer.classList.toggle(`${navDrawer.classList[0]}--active`);
+      navMenu.classList.toggle(`${navMenu.classList[0]}--active`);
+    });
+
+    navClose.addEventListener('click', () => {
+      navDrawer.classList.toggle(`${navDrawer.classList[0]}--active`);
+      navMenu.classList.toggle(`${navMenu.classList[0]}--active`);
+    });
+
+    navLink.addEventListener('click', () => {
+      navDrawer.classList.toggle(`${navDrawer.classList[0]}--active`);
+      navMenu.classList.toggle(`${navMenu.classList[0]}--active`);
+    });
+  </script>
 </body>
 </html>
