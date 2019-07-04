@@ -8,6 +8,8 @@
   align-items: center
   justify-content: space-evenly
   width: 80vw
+  +media($breakpoint-md)
+    flex-direction: column
 
 .headers__left,
 .headers__right
@@ -19,3 +21,7 @@
   h4
     text-align: center
     margin: $spacing-1
+
+.headers__right
+  +media($breakpoint-md)
+    margin-top: $spacing-5
