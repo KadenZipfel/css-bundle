@@ -6,11 +6,11 @@ A package for custom modular css components.
 - Buttons
 - Container
 - Headers
+- Loaders
 - Placeholders
 - Shadows
 - Inputs (coming soon)
 - Labels (coming soon)
-- Loaders (coming soon)
 - and many more to come...
 
 ### Note:
