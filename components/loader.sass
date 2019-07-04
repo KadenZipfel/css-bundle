@@ -1,0 +1,40 @@
+.spinner
+  width: 8px
+  height: 8px
+  margin: $spacing-4 auto
+  opacity: 0.5
+  border-radius: 50%
+  box-shadow: 0 -14px 0 rgba(0,0,0,0.8), 10px -10px 0 rgba(0,0,0,0.7), 14px 0px 1px rgba(0,0,0,0.6), 10px 10px 1px rgba(0,0,0,0.5), 0px 14px 2px rgba(0,0,0,0.4), -10px 10px 2px rgba(0,0,0,0.3), -14px 0px 3px rgba(0,0,0,0.2), -10px -10px 3px rgba(0,0,0,0.1)
+  transform-origin: 50%
+  animation: spin 0.5s steps(8) infinite
+
+@keyframes spin
+  0% 
+    transform: rotate(0) 
+  100% 
+    transform: rotate(360deg)
+
+.dots
+  display: flex
+
+.dot
+  height: 5px
+  width: 5px
+  background-color: black
+  border-radius: 50%
+  margin: 2px
+  
+.dot--1
+  animation: jump 0.8s infinite
+.dot--2
+  animation: jump 0.8s infinite 0.1s
+.dot--3
+  animation: jump 0.8s infinite 0.2s
+  
+@keyframes jump
+  0%
+    transform: translateY(0)
+  30%
+    transform: translateY(-150%)
+  60%
+    transform: translateY(0)
