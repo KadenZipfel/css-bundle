@@ -1,20 +1,117 @@
 @import ../config/colors
 @import ../config/spacing
 
-$button-background-color: $color-neutral-button-background--light
-$button-font-color: $color-neutral-button-font--dark
+$button-background-color: white
+$button-font-color: $color-neutral-0
   
 .btn
   background: $button-background-color
   color: $button-font-color
   cursor: pointer
   border: 1px solid $button-font-color
+  border-radius: 5px
+  font-size: $font-size-2
+  padding: $spacing-2 $spacing-5
+
+// Solid Colors
+
+.btn-dark
+  background-color: $color-neutral-0
+  color: $color-neutral-6
+  border: 2px solid $color-neutral-0
+  transition: 0.2s background-color, 0.2s color
+.btn-dark:hover
+  background-color: white
+  color: $color-neutral-0
+
+.btn-blue
+  background-color: $color-blue-1
+  color: $color-neutral-6
+  border: 2px solid $color-blue-1
+  transition: 0.2s background-color, 0.2s color
+.btn-blue:hover
+  background-color: white
+  color: $color-blue-1
+
+.btn-green
+  background-color: $color-green-1 
+  color: $color-neutral-6
+  border: 2px solid $color-green-1
+  transition: 0.2s background-color, 0.2s color
+.btn-green:hover
+  background-color: white
+  color: $color-green-1
+
+.btn-orange
+  background-color: $color-orange-1
+  color: $color-neutral-6
+  border: 2px solid $color-orange-1
+  transition: 0.2s background-color, 0.2s color
+.btn-orange:hover
+  background-color: white
+  color: $color-orange-1
+
+.btn-red
+  background-color: $color-red-1 
+  color: $color-neutral-6
+  border: 2px solid $color-red-1
+  transition: 0.2s background-color, 0.2s color
+.btn-red:hover
+  background-color: white
+  color: $color-red-1
+
+// Outline Colors
+
+.btn-light-outline
+  background-color: white
+  border: 2px solid $color-neutral-1
+  color: $color-neutral-1
+  transition: 0.2s background-color, 0.2s color
+.btn-light-outline:hover
+  background-color: $color-neutral-1
+  color: white
+
+.btn-dark-outline
+  color: $color-neutral-0
+  border: 2px solid $color-neutral-0
+  transition: 0.2s background-color, 0.2s color
+.btn-dark-outline:hover
+  color: white
+  background: $color-neutral-0
+
+.btn-blue-outline
+  color: $color-blue-1
+  border: 2px solid $color-blue-1
+  transition: 0.2s background-color, 0.2s color
+.btn-blue-outline:hover
+  color: white
+  background: $color-blue-1
+
+.btn-green-outline
+  color: $color-green-1
+  border: 2px solid $color-green-1
+  transition: 0.2s background-color, 0.2s color
+.btn-green-outline:hover
+  color: white
+  background: $color-green-1
+
+.btn-orange-outline
+  color: $color-orange-1
+  border: 2px solid $color-orange-1
+  transition: 0.2s background-color, 0.2s color
+.btn-orange-outline:hover
+  color: white
+  background: $color-orange-1
+
+.btn-red-outline
+  color: $color-red-1
+  border: 2px solid $color-red-1
+  transition: 0.2s background-color, 0.2s color
+.btn-red-outline:hover
+  color: white
+  background: $color-red-1
 
 // Size
-
-.btn-xs
-  font-size: $font-size-0
-  padding: $spacing-0 $spacing-3
   
 .btn-sm
   font-size: $font-size-1
@@ -49,29 +146,7 @@ $button-font-color: $color-neutral-button-font--dark
 .btn-br-5
   border-radius: 50px
 
-// Solid/Outline
-
-.btn-solid
-  $button-background-color: $color-neutral-button-background--dark
-  $button-font-color: $color-neutral-button-font--light
-  background-color: $button-background-color
-  color: $button-font-color
-
-.btn-outline
-  border: 2px solid $color-neutral-button-font--dark
-
 // Animations
-
-.btn-ani-opp
-  transition: 0.2s background-color, 0.2s color
-
-.btn-ani-opp:hover
-  background-color: $button-font-color
-  color: $button-background-color
-
-.btn-ani-opp:hover.btn-solid
-  background-color: $button-background-color
-  color: $button-font-color
 
 .btn-ani-raise
   transition: 0.2s transform, 0.2s box-shadow
