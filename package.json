@@ -7,7 +7,10 @@
     "start": "node app.js",
     "dev-server": "nodemon app.js",
     "sass:compile": "node-sass --include-path sass docs/sass/main.sass docs/css/styles.css",
-    "sass-watch": "nodemon -e sass -x \"npm run sass:compile\""
+    "sass-watch": "nodemon -e sass -x \"npm run sass:compile\"",
+    "sass:bundle": "node-sass --include-path sass bundle.sass bundle.css",
+    "minify:bundle": "css-minify -f bundle.css",
+    "build:sass": "echo $(npm run sass:bundle)-$(npm run minify:bundle)"
   },
   "repository": {
     "type": "git",
@@ -16,6 +19,7 @@
   "author": "Kaden Zipfel",
   "license": "ISC",
   "devDependencies": {
+    "css-minify": "^1.0.1",
     "node-sass": "^4.12.0"
   }
 }
