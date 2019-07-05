@@ -1,0 +1,82 @@
+=source-reveal($element)
+  .src-#{$element}:hover + .code-box
+    height: 40px
+    .code-#{$element}
+      transform: scaleY(1)
+  .code-box:hover
+    height: 40px
+    .code-#{$element}
+      transform: scaleY(1)
+  
+.code-box
+  height: 0
+  transition: 0.3s height
+  margin: $spacing-2
+  
+.code
+  background: $color-neutral-0
+  padding: $spacing-2 $spacing-4
+  color: $color-neutral-5
+  border-radius: 5px
+  border: 1px solid $color-neutral-4
+  display: block
+  transform: scaleY(0)
+  transform-origin: top
+  transition: 0.3s transform
+
++source-reveal(alert-light)
++source-reveal(alert-dark)
++source-reveal(alert-blue)
++source-reveal(alert-green)
++source-reveal(alert-orange)
++source-reveal(alert-red)
+
++source-reveal(btn-xs)
++source-reveal(btn-sm)
++source-reveal(btn-md)
++source-reveal(btn-lg)
++source-reveal(btn-xl)
+
++source-reveal(btn-br-1)
++source-reveal(btn-br-2)
++source-reveal(btn-br-3)
++source-reveal(btn-br-4)
++source-reveal(btn-br-5)
+
++source-reveal(btn-solid)
++source-reveal(btn-outline)
+
++source-reveal(btn-ani-opp)
++source-reveal(btn-ani-raise)
++source-reveal(btn-ani-switch)
+
++source-reveal(container)
+
++source-reveal(header-light-1)
++source-reveal(header-light-2)
++source-reveal(header-light-3)
++source-reveal(header-light-4)
++source-reveal(header-light-5)
+
++source-reveal(header-dark-1)
++source-reveal(header-dark-2)
++source-reveal(header-dark-3)
++source-reveal(header-dark-4)
++source-reveal(header-dark-5)
+
++source-reveal(spinner)
++source-reveal(dots)
+
++source-reveal(placeholder--1)
++source-reveal(placeholder--2)
++source-reveal(placeholder--3)
++source-reveal(placeholder--4)
+
++source-reveal(shadow-sm)
++source-reveal(shadow-md)
++source-reveal(shadow-lg)
+
++source-reveal(shadow-down)
++source-reveal(shadow-up)
++source-reveal(shadow-left)
++source-reveal(shadow-right)
