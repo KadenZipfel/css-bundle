@@ -13,6 +13,12 @@ A package for custom modular css components.
 - Labels (coming soon)
 - and many more to come...
 
+### Getting Started:
+Copy this line of code into the head of your html file(s).
+```
+<link rel="stylesheet" href="https://unpkg.com/css-bundle@1.0.0/css-dist/bundle.min.css"/>
+```
+
 ### Note:
 For best results, add this import statement to your html: 
 ```
