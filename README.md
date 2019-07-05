@@ -1,4 +1,4 @@
-# CSS Pack
+# CSS Bundle
 A package for custom modular css components.
 
 ### Components:
