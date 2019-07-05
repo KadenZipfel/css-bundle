@@ -1,0 +1,29 @@
+.note
+  position: fixed
+  bottom: $spacing-4
+  left: $spacing-4
+  height: $spacing-8
+  width: $spacing-12
+  background: $color-neutral-0
+  display: flex
+  align-items: center
+  justify-content: center
+  color: $color-neutral-5
+  max-width: 90vw
+  padding: $spacing-2
+  text-align: center
+  border-radius: 5px
+  border: 2px solid $color-neutral-4
+  transform: translateX(-120%)
+  transition: transform 0.2s
+  animation: 10s slideinout 5s
+
+@keyframes slideinout
+  0%
+    transform: translateX(-120%)
+  5%
+    transform: translateX(0)
+  95%
+    transform: translateX(0)
+  100%
+    transform: translateX(-120%)
