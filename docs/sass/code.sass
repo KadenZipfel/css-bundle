@@ -40,7 +40,8 @@
   transform: scaleY(0)
   transform-origin: top
   transition: 0.3s transform
-  overflow-x: scroll
+  +media($breakpoint-sm)
+    overflow-x: scroll
 
 .code-visible
   transform: scaleY(1)
