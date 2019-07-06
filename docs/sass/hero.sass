@@ -45,11 +45,6 @@
   margin-top: $spacing-5
   padding: $spacing-1 $spacing-7
 
-.hero__button:focus + .get-started
-  transform: scaleY(1)
-  height: 150px
-  opacity: 1
-
 .get-started
   margin-top: $spacing-4
   transform: scaleY(0)
@@ -57,6 +52,11 @@
   height: 0
   opacity: 0
   transition: 0.3s transform, 0.3s height, 0.3s opacity
+
+.get-started--active
+  transform: scaleY(1)
+  height: 150px
+  opacity: 1
 
 .get-started__info
   color: white

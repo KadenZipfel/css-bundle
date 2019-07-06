@@ -654,6 +654,8 @@
     const navMenu = document.querySelector('.nav__menu');
     const navDrawer = document.querySelector('.nav__drawer');
     const navClose = document.querySelector('.nav__close-area');
+    const heroButton = document.querySelector('.hero__button');
+    const getStarted = document.querySelector('.get-started');
 
     navMenu.addEventListener('click', () => {
       navDrawer.classList.toggle(`${navDrawer.classList[0]}--active`);
@@ -663,6 +665,10 @@
     navClose.addEventListener('click', () => {
       navDrawer.classList.toggle(`${navDrawer.classList[0]}--active`);
       navMenu.classList.toggle(`${navMenu.classList[0]}--active`);
+    });
+
+    heroButton.addEventListener('click', () => {
+      getStarted.classList.toggle(`${getStarted.classList[0]}--active`);
     });
   </script>
 </body>
