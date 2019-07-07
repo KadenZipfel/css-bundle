@@ -246,34 +246,34 @@ body {
   margin-bottom: 12px; }
 
 .ph-line:nth-of-type(1) {
-  width: 83%; }
+  width: 79%; }
 
 .ph-line:nth-of-type(2) {
-  width: 77%; }
-
-.ph-line:nth-of-type(3) {
-  width: 73%; }
-
-.ph-line:nth-of-type(4) {
-  width: 88%; }
-
-.ph-line:nth-of-type(5) {
-  width: 91%; }
-
-.ph-line:nth-of-type(6) {
-  width: 78%; }
-
-.ph-line:nth-of-type(7) {
-  width: 75%; }
-
-.ph-line:nth-of-type(8) {
   width: 82%; }
 
+.ph-line:nth-of-type(3) {
+  width: 99%; }
+
+.ph-line:nth-of-type(4) {
+  width: 77%; }
+
+.ph-line:nth-of-type(5) {
+  width: 92%; }
+
+.ph-line:nth-of-type(6) {
+  width: 84%; }
+
+.ph-line:nth-of-type(7) {
+  width: 76%; }
+
+.ph-line:nth-of-type(8) {
+  width: 77%; }
+
 .ph-line:nth-of-type(9) {
-  width: 87%; }
+  width: 95%; }
 
 .ph-line:nth-of-type(10) {
-  width: 100%; }
+  width: 80%; }
 
 .ph-header {
   margin-bottom: 8px;
@@ -310,11 +310,11 @@ body {
   .ph-image-paragraph .ph-line:nth-of-type(3) {
     margin-left: 88px; }
   .ph-image-paragraph .ph-line:nth-of-type(1) {
-    width: calc(73% - 88px); }
+    width: calc(97% - 88px); }
   .ph-image-paragraph .ph-line:nth-of-type(2) {
-    width: calc(77% - 88px); }
+    width: calc(93% - 88px); }
   .ph-image-paragraph .ph-line:nth-of-type(3) {
-    width: calc(74% - 88px); }
+    width: calc(98% - 88px); }
   .ph-image-paragraph .ph-lines {
     display: flex;
     flex-direction: column;
@@ -522,7 +522,7 @@ html {
     margin-top: 32px; } }
 
 .hero {
-  background: linear-gradient(to bottom, #71D5D3, #40ADA3);
+  background: linear-gradient(to bottom, #3A80C7, #2A65A0);
   z-index: 2;
   position: relative;
   padding: 96px 12px;
@@ -555,7 +555,7 @@ html {
       font-size: 20px; } }
 
 .hero__button {
-  background: linear-gradient(to bottom, #71D5D3, #40ADA3);
+  background: linear-gradient(to bottom, #3A80C7, #2A65A0);
   border: 2px solid white;
   font-family: Open Sans;
   font-weight: 300;
@@ -601,7 +601,7 @@ html {
 .nav__background {
   width: 100vw;
   height: 70px;
-  background: linear-gradient(to bottom, #71D5D3, #40ADA3);
+  background: linear-gradient(to bottom, #3A80C7, #2A65A0);
   position: fixed;
   top: 0;
   left: 0;
@@ -748,7 +748,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background: linear-gradient(to bottom, #71D5D3, #40ADA3); }
+  background: linear-gradient(to bottom, #3A80C7, #2A65A0); }
   @media (max-width: 460px) {
     .footer {
       flex-direction: column; } }
