@@ -39,6 +39,7 @@
   height: 100%
   width: 49px
   z-index: 1
+  transition: 0.3s transform
 
 .nav__bar
   height: 3px
@@ -63,6 +64,9 @@
   transition: 0.3s transform
 
 .nav__menu--active
+  transform: translateX($spacing-7)
+  +media($breakpoint-sm)
+    transform: translateX(0)
   .nav__bar--1
     transform: translate(-8px, 1px) rotate(-45deg)
   .nav__bar--2
@@ -86,11 +90,10 @@
   top: 0
   right: 0
   height: 100vh
-  width: 500px
+  width: 300px
   max-width: 90vw
-  background: linear-gradient(to right, $color-green-4, $color-green-3)
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25)
-  padding: $spacing-7
+  background: $color-neutral-0
+  padding: $spacing-6
   display: flex
   flex-direction: column
   align-items: center
@@ -106,6 +109,7 @@
 
   .nav__close-area
     pointer-events: all
+    opacity: 1
   .nav__links
     opacity: 1
   .nav__socials
@@ -121,18 +125,19 @@
   opacity: 0
   transition: 0.3s opacity
   list-style: none
+  padding: 0
 
 .nav__header 
   color: white
   font-size: $font-size-6
-  font-family: Open Sans
+  font-family: Roboto
   font-weight: $font-weight-semibold
   margin: $spacing-4 0
 
 .nav__link
   text-decoration: none
   color: white
-  font-size: $font-size-5
-  font-family: Roboto
+  font-size: $font-size-4
+  font-family: Open Sans
   font-weight: $font-weight-light
   margin-bottom: $spacing-1 
