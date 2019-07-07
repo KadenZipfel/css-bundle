@@ -246,34 +246,34 @@ body {
   margin-bottom: 12px; }
 
 .ph-line:nth-of-type(1) {
-  width: 79%; }
+  width: 87%; }
 
 .ph-line:nth-of-type(2) {
-  width: 82%; }
+  width: 86%; }
 
 .ph-line:nth-of-type(3) {
-  width: 99%; }
+  width: 90%; }
 
 .ph-line:nth-of-type(4) {
-  width: 77%; }
+  width: 83%; }
 
 .ph-line:nth-of-type(5) {
-  width: 92%; }
+  width: 71%; }
 
 .ph-line:nth-of-type(6) {
-  width: 84%; }
+  width: 78%; }
 
 .ph-line:nth-of-type(7) {
-  width: 76%; }
-
-.ph-line:nth-of-type(8) {
-  width: 77%; }
-
-.ph-line:nth-of-type(9) {
   width: 95%; }
 
+.ph-line:nth-of-type(8) {
+  width: 83%; }
+
+.ph-line:nth-of-type(9) {
+  width: 73%; }
+
 .ph-line:nth-of-type(10) {
-  width: 80%; }
+  width: 77%; }
 
 .ph-header {
   margin-bottom: 8px;
@@ -310,11 +310,11 @@ body {
   .ph-image-paragraph .ph-line:nth-of-type(3) {
     margin-left: 88px; }
   .ph-image-paragraph .ph-line:nth-of-type(1) {
-    width: calc(97% - 88px); }
+    width: calc(89% - 88px); }
   .ph-image-paragraph .ph-line:nth-of-type(2) {
-    width: calc(93% - 88px); }
+    width: calc(100% - 88px); }
   .ph-image-paragraph .ph-line:nth-of-type(3) {
-    width: calc(98% - 88px); }
+    width: calc(71% - 88px); }
   .ph-image-paragraph .ph-lines {
     display: flex;
     flex-direction: column;
@@ -351,34 +351,29 @@ body {
   margin: 16px;
   border-radius: 5px; }
 
-.alert-light {
-  border: 1px solid #BCBCBC;
-  color: #666666; }
-
 .alert-dark {
-  background-color: #f5f5f5;
-  border: 1px solid #949494;
+  background: linear-gradient(to bottom left, #414141, #666666);
+  color: white; }
+
+.alert-light {
+  background: linear-gradient(to bottom left, #E8E8E8, #f5f5f5);
   color: #282828; }
 
 .alert-blue {
-  background-color: #EFF8FF;
-  border: 1px solid #3A80C7;
-  color: #223C54; }
+  background: linear-gradient(to bottom left, #1E476F, #2A65A0);
+  color: white; }
 
 .alert-green {
-  background-color: #E7FFFE;
-  border: 1px solid #40ADA3;
-  color: #134343; }
+  background: linear-gradient(to bottom left, #1E645E, #2D8F86);
+  color: white; }
 
 .alert-orange {
-  background-color: #fffcf4;
-  border: 1px solid #F1CB66;
-  color: #5B4915; }
+  background: linear-gradient(to bottom left, #8A6D21, #C8A741);
+  color: white; }
 
 .alert-red {
-  background-color: #FCE8E8;
-  border: 1px solid #DA3B34;
-  color: #5F1B18; }
+  background: linear-gradient(to bottom left, #87211C, #B72B24);
+  color: white; }
 
 .spinner {
   width: 8px;
@@ -781,40 +776,6 @@ html {
   transform: scaleY(1);
   margin: 8px; }
 
-.src-alert-light:hover + .code-box {
-  height: 40px; }
-  .src-alert-light:hover + .code-box .code-alert-light {
-    transform: scaleY(1); }
-
-.code-box:hover {
-  height: 40px; }
-  .code-box:hover .code-alert-light {
-    transform: scaleY(1); }
-
-.src-alert-light:hover + .code-box--md {
-  height: 80px; }
-
-.code-box--md:hover {
-  height: 80px; }
-
-.src-alert-light:hover + .code-box--lg {
-  height: 120px; }
-
-.code-box--lg:hover {
-  height: 120px; }
-
-.src-alert-light:hover + .code-box--xl {
-  height: 160px; }
-
-.code-box--xl:hover {
-  height: 160px; }
-
-.src-alert-light:hover + .code-box--xxl {
-  height: 200px; }
-
-.code-box--xxl:hover {
-  height: 200px; }
-
 .src-alert-dark:hover + .code-box {
   height: 40px; }
   .src-alert-dark:hover + .code-box .code-alert-dark {
@@ -844,6 +805,40 @@ html {
   height: 160px; }
 
 .src-alert-dark:hover + .code-box--xxl {
+  height: 200px; }
+
+.code-box--xxl:hover {
+  height: 200px; }
+
+.src-alert-light:hover + .code-box {
+  height: 40px; }
+  .src-alert-light:hover + .code-box .code-alert-light {
+    transform: scaleY(1); }
+
+.code-box:hover {
+  height: 40px; }
+  .code-box:hover .code-alert-light {
+    transform: scaleY(1); }
+
+.src-alert-light:hover + .code-box--md {
+  height: 80px; }
+
+.code-box--md:hover {
+  height: 80px; }
+
+.src-alert-light:hover + .code-box--lg {
+  height: 120px; }
+
+.code-box--lg:hover {
+  height: 120px; }
+
+.src-alert-light:hover + .code-box--xl {
+  height: 160px; }
+
+.code-box--xl:hover {
+  height: 160px; }
+
+.src-alert-light:hover + .code-box--xxl {
   height: 200px; }
 
 .code-box--xxl:hover {
@@ -2689,18 +2684,8 @@ html {
   position: fixed;
   bottom: 24px;
   left: 24px;
-  height: 96px;
-  width: 384px;
-  background: #282828;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #E8E8E8;
   max-width: 90vw;
-  padding: 12px;
   text-align: center;
-  border-radius: 5px;
-  border: 2px solid #BCBCBC;
   transform: translateX(-120%);
   transition: transform 0.2s;
   animation: 10s slideinout 5s; }
