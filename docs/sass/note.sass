@@ -1,3 +1,5 @@
+@import ../../config/spacing
+
 .note
   position: fixed
   bottom: $spacing-4
@@ -5,15 +7,20 @@
   max-width: 90vw
   text-align: center
   transform: translateX(-120%)
-  transition: transform 0.2s
-  animation: 10s slideinout 5s
+  transition: opacity 1s
+  animation: 0.3s slidein 1s forwards
+  cursor: pointer
 
-@keyframes slideinout
+.note__x
+  position: absolute
+  top: 2px
+  right: $spacing-1
+
+.note--hidden
+  opacity: 0
+
+@keyframes slidein
   0%
     transform: translateX(-120%)
-  5%
-    transform: translateX(0)
-  95%
-    transform: translateX(0)
   100%
-    transform: translateX(-120%)
+    transform: translateX(0)
