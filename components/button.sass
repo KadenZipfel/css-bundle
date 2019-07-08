@@ -12,53 +12,44 @@ $button-font-color: $color-neutral-0
   border-radius: 5px
   font-size: $font-size-2
   padding: $spacing-2 $spacing-5
+.btn:hover
+  transform: translateY(-2px)
+  box-shadow: 0 2px $spacing-0 rgba(0, 0, 0, 0.25)
+.btn:active
+  transform: translateY(0)
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25)
 
 // Solid Colors
 
 .btn-dark
-  background-color: $color-neutral-0
-  color: $color-neutral-6
-  border: 2px solid $color-neutral-0
-  transition: 0.2s background-color, 0.2s color
-.btn-dark:hover
-  background-color: white
-  color: $color-neutral-0
+  background: linear-gradient(to top, $color-neutral-1, $color-neutral-2)
+  color: white
+  border: 2px solid $color-neutral-1
+  transition: 0.2s background, 0.2s color, 0.2s transform, 0.2s box-shadow
 
 .btn-blue
-  background-color: $color-blue-1
-  color: $color-neutral-6
+  background: linear-gradient(to top, $color-blue-1, $color-blue-2)
+  color: white
   border: 2px solid $color-blue-1
-  transition: 0.2s background-color, 0.2s color
-.btn-blue:hover
-  background-color: white
-  color: $color-blue-1
+  transition: 0.2s background, 0.2s color, 0.2s transform, 0.2s box-shadow
 
 .btn-green
-  background-color: $color-green-1 
-  color: $color-neutral-6
+  background: linear-gradient(to top, $color-green-1, $color-green-2)
+  color: white
   border: 2px solid $color-green-1
-  transition: 0.2s background-color, 0.2s color
-.btn-green:hover
-  background-color: white
-  color: $color-green-1
+  transition: 0.2s background, 0.2s color, 0.2s transform, 0.2s box-shadow
 
 .btn-orange
-  background-color: $color-orange-1
-  color: $color-neutral-6
+  background: linear-gradient(to top, $color-orange-1, $color-orange-2)
+  color: white
   border: 2px solid $color-orange-1
-  transition: 0.2s background-color, 0.2s color
-.btn-orange:hover
-  background-color: white
-  color: $color-orange-1
+  transition: 0.2s background, 0.2s color, 0.2s transform, 0.2s box-shadow
 
 .btn-red
-  background-color: $color-red-1 
-  color: $color-neutral-6
+  background: linear-gradient(to top, $color-red-1, $color-red-2)
+  color: white
   border: 2px solid $color-red-1
-  transition: 0.2s background-color, 0.2s color
-.btn-red:hover
-  background-color: white
-  color: $color-red-1
+  transition: 0.2s background, 0.2s color, 0.2s transform, 0.2s box-shadow
 
 // Outline Colors
 
@@ -66,7 +57,7 @@ $button-font-color: $color-neutral-0
   background-color: white
   border: 2px solid $color-neutral-1
   color: $color-neutral-1
-  transition: 0.2s background-color, 0.2s color
+  transition: 0.2s background, 0.2s color, 0.2s transform, 0.2s box-shadow
 .btn-light-outline:hover
   background-color: $color-neutral-1
   color: white
@@ -74,7 +65,7 @@ $button-font-color: $color-neutral-0
 .btn-dark-outline
   color: $color-neutral-0
   border: 2px solid $color-neutral-0
-  transition: 0.2s background-color, 0.2s color
+  transition: 0.2s background, 0.2s color, 0.2s transform, 0.2s box-shadow
 .btn-dark-outline:hover
   color: white
   background: $color-neutral-0
@@ -82,7 +73,7 @@ $button-font-color: $color-neutral-0
 .btn-blue-outline
   color: $color-blue-1
   border: 2px solid $color-blue-1
-  transition: 0.2s background-color, 0.2s color
+  transition: 0.2s background, 0.2s color, 0.2s transform, 0.2s box-shadow
 .btn-blue-outline:hover
   color: white
   background: $color-blue-1
@@ -90,7 +81,7 @@ $button-font-color: $color-neutral-0
 .btn-green-outline
   color: $color-green-1
   border: 2px solid $color-green-1
-  transition: 0.2s background-color, 0.2s color
+  transition: 0.2s background, 0.2s color, 0.2s transform, 0.2s box-shadow
 .btn-green-outline:hover
   color: white
   background: $color-green-1
@@ -98,7 +89,7 @@ $button-font-color: $color-neutral-0
 .btn-orange-outline
   color: $color-orange-1
   border: 2px solid $color-orange-1
-  transition: 0.2s background-color, 0.2s color
+  transition: 0.2s background, 0.2s color, 0.2s transform, 0.2s box-shadow
 .btn-orange-outline:hover
   color: white
   background: $color-orange-1
@@ -106,7 +97,7 @@ $button-font-color: $color-neutral-0
 .btn-red-outline
   color: $color-red-1
   border: 2px solid $color-red-1
-  transition: 0.2s background-color, 0.2s color
+  transition: 0.2s background, 0.2s color, 0.2s transform, 0.2s box-shadow
 .btn-red-outline:hover
   color: white
   background: $color-red-1
