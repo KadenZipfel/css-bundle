@@ -51,12 +51,15 @@
   transform-origin: top
   height: 0
   opacity: 0
+  max-width: 95vw
   transition: 0.3s transform, 0.3s height, 0.3s opacity
 
 .get-started--active
   transform: scaleY(1)
-  height: 150px
+  height: 230px
   opacity: 1
+  +media($breakpoint-sm)
+    height: 320px
 
 .get-started__info
   color: white
